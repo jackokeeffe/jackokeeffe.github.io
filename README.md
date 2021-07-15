@@ -12,7 +12,7 @@ My personal website created in HTML and CSS.
 <img src="https://user-images.githubusercontent.com/55100016/125674976-0747ff67-1ef9-41c4-8ee9-d442bdecdde0.jpg" width="600"/>
 
 ### Built With:
-- Built ith HTML & CSS.
+- Built with HTML & CSS.
 - Created using [Glitch](https://glitch.com/) online text editor.
   
 ### Author:
