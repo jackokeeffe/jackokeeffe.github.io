@@ -74,6 +74,11 @@ mark {
   font-size: 300%;
 }
 
+.footer ul {
+  display: inline;
+  padding: 0 0.5% 0 0.5%;
+}
+
 .footer li {
   display: inline;
 }
