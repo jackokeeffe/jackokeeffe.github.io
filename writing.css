@@ -135,6 +135,8 @@ button{
     padding: 0.25%;
     font-family: inherit;
     border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
     color: black;
 }
 
