@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jack o'keeffe</title>
+    <link rel="shortcut icon" href="misc/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="writing.css">
+    <script src="writing.js"></script>
+</head>
+<body>
+    <a id="home" onclick="closeAll()">home</a>
+    <ul id="menu">
+        <li><a onclick="showContent()">writing</a></li>
+        <div id="writing-submenu">
+            <ul>
+                <li><a onclick="showPublished()">published</a></li>
+                <div id="published-submenu">
+                    <ul>
+                        <li><a onclick = "showCord()">the cord (wlu)</a></li>
+                        <div id="cord-submenu">
+                            <ul>
+                                <li><a href="https://thecord.ca/scores-and-snubs-of-the-2023-oscars-nominations/" target="_blank">Scores and Snubs of the 2023 Oscars Nomination</a></li>
+                                <li><a href="https://thecord.ca/lil-yachty-breaks-his-mold-same-artist-new-sound/" target="_blank">Lil Yachty Breaks His Mold: Same Artist, New Sound</a></li>
+                                <li><a href="https://thecord.ca/the-importance-of-radical-publishing/" target="_blank">The Importance of Radical Publishing</a></li>
+                                <li><a href="https://thecord.ca/twitter-when-all-is-permitted/" target="_blank">Twitter When All is Permitted</a></li>
+                                <li><a href="https://thecord.ca/paul-mccartney-is-dead-long-live-paul-mccartney/" target="_blank">Paul Mccartney is Dead, Long Live Paul Mccartney</a></li>
+                                <li><a href="https://thecord.ca/adapting-a-masterpiece-the-last-of-us/" target="_blank">Adapting a Masterpiece: the Last of Us</a></li>
+                                <li><a href="https://thecord.ca/frightening-films-for-this-sinister-season/" target="_blank">Frightening Films for This Sinister Season</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <li><a onclick="showUnpublished()">unpublished</a></li>
+                <div id="unpublished-submenu">
+                    <ul>
+                        <li><a href="https://docs.google.com/document/d/1dOqcBH64EQNkJHg2N52A3YNxZsUjgt6PAvn6Nk0iMbE/edit?usp=sharing" target="_blank">The First to Stand; Fighting Against Injustice (Interview w/ Filmmaker Irene Angelico)</a></li>
+                        <li><a onclick="showFiction()">fiction</a></li>
+                        <div id="fiction-submenu">
+                            <ul>
+                                <li><a href="https://docs.google.com/document/d/15_gSGiJWp437lgJxVolZb6d2VgyafOXRYzql7XEFInk/edit?usp=sharing" target="_blank">Observations of a Coastal Town in a Sentence</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <li><a onclick="showPhotography()">photography</a></li>
+        <div id="photographyContent">
+            <ul>
+                <li><a href="https://jackokeeffe.xyz/gallery/" target="_blank">portfolio</a></li>
+            </ul>
+        </div>
+        <li><a onclick="displayProgramming()">programming</a></li>
+        <div id="programmingContent">
+            <ul>
+                <li><a onclick="displayLanguages()">languages</a></li>
+                <div id="languages">
+                    <ul>
+                        <li>python</li>
+                        <li>html/css</li>
+                        <li>javascript</li>
+                        <li>java</li>
+                        <li>sql</li>
+                    </ul>
+                </div>
+                <li><a onclick = 'displayProjects()'>projects</a></li>
+                <div id="projectContent">
+                    <ul>
+                        <li>portfolio website: this very website you're looking at. click on 'about' for more. [<a href="https://github.com/jackokeeffe/jackokeeffe.github.io" target="_blank">code</a>]</li>
+                        <li>realtime stock ticker: a LED matrix stock ticker showing real time stock data. the targeted stocks <br>are selected using a GUI built in python, than upoaded onto the arduino uno powering the matrix. [<a href="https://www.youtube.com/watch?v=urgL1vKh9yM&ab_channel=JackO%27Keeffe" target="_blank">demonstration</a>] [<a href="https://github.com/jackokeeffe/stock-ticker" target="blank">more info</a>]</li>
+                        <li>battleship: a single-player battleship game built using java. the game not only features full-graphics <br>but the locations of the ships are fully randomized, allowing for an increased difficulty. [<a href="https://www.youtube.com/watch?v=-wokQ4r2y6c&t=10s&ab_channel=JackO%27Keeffe" target="_blank">demonstration</a>] [<a href="https://github.com/jackokeeffe/java-projects/tree/main/battleship" target="_blank">more info</a>]</li>
+                        <li>programming club ('20-22): i ran and created a programming club at my high school where i challenged students <br>to complete programming problems in python. <a href="https://github.com/jackokeeffe/programming-club">these programming problems</a> may be used by anyone else wishing <br>to run a similar club. [<a href="https://github.com/jackokeeffe/programming-club">more info</a>]</li>
+                        <li><a onclick = 'displayWebProjects()'>web projects</a></li>
+                        <div id="web-projects">
+                            <ul>
+                                <li>FrontPage: though currently out of order (due to changing demands on behalf of the new york times website), <br>FrontPage aggregated and displayed, in a simplistic form, the stories featured on teh front pages of the new <br>york times, tech crunch, & cnet. this was the first project (of many) in which i utilized APIs and SQL databases. [<a href="https://github.com/jackokeeffe/FrontPage" target="_blank">more info</a>]</li>
+                                <li>captionThis: a simplistic game in which a new yorker comic is displayed and one is challenged to write a <br>matching caption. the result is easily sharable with friends. this was a small part of a larger - scrapped - project. [<a href="https://github.com/jackokeeffe/captionthis" target="_blank">more info</a>]</li>
+                                <li>randomAlbum: with this project i utilized third-party APIS. this project randomly selects an album from the <br>top 2000 albums feature on <a href="https://rateyourmusic.com/" target="_blank">rateyourmusic.com</a>. this helps simplify the introduction to new music. [<a href="https://github.com/jackokeeffe/randomAlbum" target="_blank">more info</a>]</li>
+                            </ul>
+                        </div>
+                        <li><a onclick="displayOtherProjects()">others</a></li>
+                        <div id="early-projects">
+                            <ul>
+                                <li>reelSRCH: one of my first projects. this local GUI (built entirely in python) allows one to search for <br>information regarding any film on the IMDB database. [<a href="https://github.com/jackokeeffe/reelSRCH" target="_blank">more info</a>]</li>
+                                <li>QUICKSend: this GUI client allows users to send emails. this was my first project utilizing the smtplib library. [<a href="https://github.com/jackokeeffe/QUIKSend" target="_blank">more info</a>]</li>
+                                <li>various java projects: various smaller projects built while first learning java. [<a href="https://github.com/jackokeeffe/java-projects" target="_blank">more info</a>]</li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <li><a href="https://github.com/jackokeeffe">github</a></li>
+            </ul>
+        </div>
+        <li><a onclick="showAbout()">about</a></li>
+        <div id="about">
+            <ul>
+                <li><p>about me: i am jack o'keeffe. i enjoy writing (articles, essays, screenplays), <br>programming and photography (digital & film); literature, philosophy and music.</p></li>
+                <li><p>about this site: this is my website. an earlier version can be found <a href="previous/index.html" target="_blank">here</a> (which solely <br>focused on programming). although this website seems bare, that was the intention. <br>i've taken inspiration from the german photographer <a href="https://tillmans.co.uk/" target="_blank">wolfgang tillmanns's portfolio site</a> <br>as well as <a href="http://www.coldbacon.com/home-noflash.html" target="_blank">coldbacon.com</a>, in conjunction with fonts and styles from microsoft's windows <br>95 operating system.</p></li>
+                <li><p>purpose: this site is to publish and publicly keep track of my works. <br>feel free to contact me at <a href="mailto:contact@jackokeeffe.xyz" target="_blank">contact@jackokeeffe.xyz</a>.</p></li>
+            </ul>
+        </div>
+        <li><a onclick="displayMiscContent()">misc.</a></li>
+        <div id="miscContent">
+            <ul>
+                <li><a onclick="displayMusicContent()">music</a></li>
+                <div id="musicContent">
+                    <ul>
+                        <li><a href="https://open.spotify.com/artist/2LpZXIE6yVXf8fxQFzce7g?si=NqrwTu8XRrap7evja7K6Iw" target="_blank">spotify</a></li>
+                        <li><a href="https://music.apple.com/ca/artist/fourlivingcreatures/1667264095" target="_blank">apple music</a></li>
+                        <li><a href="https://soundcloud.com/fourlivingcreatures" target="_blank">soundcloud</a></li>
+                        <li>about this: being interested in music, i've made <br>experimental electronic/hip-hop beats. all were made in logic pro.</li>
+                    </ul>
+                </div>
+                <li><a onclick="displaySocials()">socials</a></li>
+                <div id="socialContent">
+                    <ul>
+                        <li><a href="https://letterboxd.com/jackokeeffe/" target="blank">letterboxd</a></li>
+                        <li><a href="https://www.goodreads.com/user/show/143509283-jack" target="_blank">goodreads</a></li>
+                        <li><a href="https://open.spotify.com/user/8e7cap9cql89mmqhtpnuk30q5?si=9f6c53cfd6574bcd" target="_blank">spotify</a></li>
+                        <li><a href="mailto:contact@jackokeeffe.xyz" target="_blank">email</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </ul>
+    <p id="old-site"><a href="previous/index.html" target="_blank">old site</a></p>
+    <button onclick="party()">click me ♫</button>
+    <img id="hula" style="display: none;" src="gifs/hula.gif">
+    <audio id="luau" src="misc/muzak.mp3" loop="loop"></audio>
+
+    <!--<div id="gallery">
+        <img id="display" src="" alt="">
+        <p id="caption"></p>
+    </div>-->
+    
+</body>
+</html>
