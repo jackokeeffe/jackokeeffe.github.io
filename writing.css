@@ -1,0 +1,144 @@
+/* Overall */
+@font-face{
+    font-family: windows;
+    src: url(misc/W95.otf);
+}
+
+body{
+    font-family: windows;
+    font-size: 205%;
+    padding: 1% 0% 0% 1%;
+}
+
+a{
+    color: gray;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+}
+
+/* Menu */
+#home{
+    color: black;
+    text-decoration: none;
+}
+
+#home:hover{
+    background-color: white;
+}
+
+#menu{
+    margin-top: 0.5%;
+}
+
+#photographyContent{
+    display: none;
+    font-size: 80%;
+}
+
+#about{
+    display: none;
+    font-size: 80%;
+}
+
+#about *{
+    margin: 1% 0% 0.5% 0%;
+}
+
+#about ul li p{
+    margin: -0.5%;
+}
+
+/* Writing Menu */
+#writing-submenu{
+    display: none;
+    font-size: 80%;
+}
+
+#published-submenu{
+    display: none;
+}
+
+#cord-submenu{
+    display: none;
+}
+
+#unpublished-submenu{
+    display: none;
+}
+
+#fiction-submenu{
+    display: none;
+}
+
+/* Programming Content */
+
+#programmingContent{
+    display: none;
+    font-size: 80%;
+}
+
+#languages{
+    display: none;
+}
+
+#projectContent{
+    display: none;
+}
+
+#projectContent li{
+    padding: 0.25%;
+}
+
+#web-projects{
+    display: none;
+}
+
+#early-projects{
+    display: none;
+}
+
+/* Miscellaneous Content */
+#miscContent{
+    display: none;
+    font-size: 80%;
+}
+
+#musicContent {
+    display: none;
+}
+
+/* Gallery */
+#gallery{
+    float: right;
+}
+
+#display{
+    width: 650px;
+}
+
+/* Extra */
+#hula{
+    width: 5%;
+}
+
+#old-site{
+    font-size: 80%;
+    margin: -1% 0 0 0;
+}
+
+button{
+    margin-top: 0.5%;
+    padding: 0.25%;
+    font-family: inherit;
+    border-radius: 8px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+    border: none;
+}
