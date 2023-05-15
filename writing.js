@@ -1,6 +1,6 @@
 var elementIDs = ['about', 'photographyContent', 'writing-submenu', 'published-submenu', 'cord-submenu', 
 'unpublished-submenu', 'fiction-submenu', 'programmingContent', 'languages', 'projectContent', 'web-projects', 
-'early-projects', 'miscContent', 'musicContent']
+'early-projects', 'miscContent', 'musicContent', 'socialContent']
 
 function closeAll(){
     var length = elementIDs.length-1;
@@ -175,7 +175,19 @@ function displayMusicContent(){
     }
 }
 
+var socialCount = 0;
+function displaySocials(){
+    if(socialCount == 0){
+        document.getElementById('socialContent').style.display = 'inline'
+        socialCount++;
+    } else{
+        document.getElementById('socialContent').style.display = 'none'
+        socialCount--;
+    }
+}
+
 // Gallery
+/*  THIS CODE IS STILL A WORK IN PROGRESS */
 var images = ["suzylake.jpg", "wolfgang.jpg", "pieta.jpg", "moorman.jpg", "schiele.jpg", "square.jpg", "sibyl.jpg"];
 var descriptions = ["Suzy Lake, Imitations of Myself #1, 1973/2012, 48 light-jet chromogenic prints", "Corinne on Gloucester Place (1993) by Wolfgang Tillmans", "Pietà (1498–1499) by Michelangelo Buonarroti", "TV Bra (1969), Charlotte Moorman and Nam June Paik", "Egon Schiele (1890-1918), Photographer Unknown", "Black Square (1915), Kazimir Malevich", "Sibyl with Tabula Rasa (1648), Diego Velazquez"]
 
@@ -216,6 +228,8 @@ function resetVariables(){
     projectCount = 0
     webProjectCount = 0
     otherCount = 0
+    miscCount = 0
     musicCount = 0
     musicCount = 0
+    socialCount = 0
 }
