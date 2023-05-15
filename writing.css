@@ -111,6 +111,10 @@ a:hover{
     display: none;
 }
 
+#socialContent{
+    display: none;
+}
+
 /* Gallery */
 #gallery{
     float: right;
