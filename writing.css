@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: windows;
+    font-family: windows, Arial, Helvetica, sans-serif;
     font-size: 205%;
     padding: 1% 0% 0% 1%;
 }
@@ -113,15 +113,6 @@ a:hover{
 
 #socialContent{
     display: none;
-}
-
-/* Gallery */
-#gallery{
-    float: right;
-}
-
-#display{
-    width: 650px;
 }
 
 /* Extra */
