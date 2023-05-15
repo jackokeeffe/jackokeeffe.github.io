@@ -135,6 +135,7 @@ button{
     padding: 0.25%;
     font-family: inherit;
     border-radius: 8px;
+    color: black;
 }
 
 button:hover{
