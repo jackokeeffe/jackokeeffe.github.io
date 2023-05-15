@@ -186,21 +186,6 @@ function displaySocials(){
     }
 }
 
-// Gallery
-/*  THIS CODE IS STILL A WORK IN PROGRESS */
-var images = ["suzylake.jpg", "wolfgang.jpg", "pieta.jpg", "moorman.jpg", "schiele.jpg", "square.jpg", "sibyl.jpg"];
-var descriptions = ["Suzy Lake, Imitations of Myself #1, 1973/2012, 48 light-jet chromogenic prints", "Corinne on Gloucester Place (1993) by Wolfgang Tillmans", "Pietà (1498–1499) by Michelangelo Buonarroti", "TV Bra (1969), Charlotte Moorman and Nam June Paik", "Egon Schiele (1890-1918), Photographer Unknown", "Black Square (1915), Kazimir Malevich", "Sibyl with Tabula Rasa (1648), Diego Velazquez"]
-
-window.onload = function() {
-    setImage();
-}
-
-function setImage(){
-    var choice = Math.floor(Math.random() * 7);
-    document.getElementById("display").src= "gallery/" + images[choice];
-    document.getElementById("caption").innerHTML = descriptions[choice];
-}
-
 // Extra
 var partyCount = 0
 function party(){
