@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.title pre {
+    margin: 0;
+    font-size: 0.6vw;
+    white-space: pre;
+}
+
+.menu {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+/* Make ASCII art more readable on mobile */
+@media screen and (max-width: 768px) {
+    .title pre {
+        font-size: 1.2vw;
+    }
+}
