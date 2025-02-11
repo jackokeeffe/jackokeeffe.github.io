@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace; /* Optional: to match the ASCII art style */
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .title {
